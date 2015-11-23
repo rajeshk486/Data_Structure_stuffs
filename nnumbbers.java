@@ -6,8 +6,8 @@ public class nnumbbers {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String one="999999999999999556546669";
-		String two="999999999999999";
+		String one="999999999999999556546669";//longer number
+		String two="999999999999999";//shorter number
 		String result="";
 		int carry=0;
 		int adder=0;
