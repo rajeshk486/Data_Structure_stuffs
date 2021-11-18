@@ -1,85 +1,74 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
-{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;}
-{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh14940\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 \
-Src:\
-Airplane.java\'97> contains the main program\
-SquareShiftTest.java\'97> core java program contains the testcase\
-Test/TestDoubleShift.java\'97> Junit test cases for the airplane.java\
-\
-Logic:\
-Input arrays are transformed into a master array which serves as the layout of the Seats.\
-From this layout, all the reservations are made.\
-Step1: Initalise the SeatLayout\
-Step2: Assign the seats\
-Step3: Print the layout. \
- \
-\pard\pardeftab720\partightenfactor0
-\cf0 \
-TestCase1:\
-Input:\{\{3,2\},\{4,3\},\{2,3\},\{3,4\}\}; 37\
-    SEAT LAYOUT\
-============================\
-W  M  A  A  M  M  A  A  A  A  M  W  \
-W  M  A  A  M  M  A  A  A  A  M  W  \
-*  *  *  A  M  M  A  A  A  A  M  W  \
-*  *  *  *  *  *  *  *  *  A  M  W  \
---------------------\
-*****FLIGHT IS FULL cant take passeneger 37*****\
-RESERVED SEAT ARRANGEMENT\
-============================\
-19  25  01  02  26  27  03  04  05  06  28  20  \
-21  29  07  08  30  31  09  10  11  12  32  22  \
---  --  --  13  33  34  14  15  16  17  35  23  \
---  --  --  --  --  --  --  --  --  18  36  24  \
-MM ->Middle seats\
-AA ->Aisle seats\
-WW ->Window seats\
--- -> Dummy seats\
-\
-\
-TestCase2:
-\f1\b \cf2 int
-\f0\b0 \cf0 [][] \cf3 input1\cf0 = \{\{6,2\},\{4,3\},\{2,3\}\}; 30\
-Input: \
-    SEAT LAYOUT\'83\
-============================\
-W  M  M  M  M  A  A  M  M  A  A  W  \
-W  M  M  M  M  A  A  M  M  A  A  W  \
-*  *  *  *  *  *  A  M  M  A  A  W  \
---------------------\
-RESERVED SEAT ARRANGEMENT\
-============================\
-12  17  18  19  20  01  02  21  22  03  04  13  \
-14  23  24  25  26  05  06  27  28  07  08  15  \
---  --  --  --  --  --  09  29  30  10  11  16  \
-MM ->Middle seats\
-AA ->Aisle seats\
-WW ->Window seats\
--- -> Dummy seats\
-\
-\
-TestCase3:\
-Input: \{\{6,2\},\{4,3\},\{2,3\},\{3,4\}\}; 10\
-    SEAT LAYOUT\
-============================\
-W  M  M  M  M  A  A  M  M  A  A  A  A  M  W  \
-W  M  M  M  M  A  A  M  M  A  A  A  A  M  W  \
-*  *  *  *  *  *  A  M  M  A  A  A  A  M  W  \
-*  *  *  *  *  *  *  *  *  *  *  *  A  M  W  \
---------------------\
-RESERVED SEAT ARRANGEMENT\
-============================\
-WW  MM  MM  MM  MM  01  02  MM  MM  03  04  05  06  MM  WW  \
-WW  MM  MM  MM  MM  07  08  MM  MM  09  10  AA  AA  MM  WW  \
---  --  --  --  --  --  AA  MM  MM  AA  AA  AA  AA  MM  WW  \
---  --  --  --  --  --  --  --  --  --  --  --  AA  MM  WW  \
-MM ->Middle seats\
-AA ->Aisle seats\
-WW ->Window seats\
--- -> Dummy seats\
-}
+Src:
+Airplane.java—> contains the main program
+SquareShiftTest.java—> core java program contains the testcase
+Test/TestDoubleShift.java—> Junit test cases for the airplane.java
+
+Logic:
+Input arrays are transformed into a master array which serves as the layout of the Seats.
+From this layout, all the reservations are made.
+Step1: Initalise the SeatLayout
+Step2: Assign the seats
+Step3: Print the layout. 
+ 
+
+TestCase1:
+Input:{{3,2},{4,3},{2,3},{3,4}}; 37
+    SEAT LAYOUT
+============================
+W  M  A  A  M  M  A  A  A  A  M  W  
+W  M  A  A  M  M  A  A  A  A  M  W  
+*  *  *  A  M  M  A  A  A  A  M  W  
+*  *  *  *  *  *  *  *  *  A  M  W  
+--------------------
+*****FLIGHT IS FULL cant take passeneger 37*****
+RESERVED SEAT ARRANGEMENT
+============================
+19  25  01  02  26  27  03  04  05  06  28  20  
+21  29  07  08  30  31  09  10  11  12  32  22  
+--  --  --  13  33  34  14  15  16  17  35  23  
+--  --  --  --  --  --  --  --  --  18  36  24  
+MM ->Middle seats
+AA ->Aisle seats
+WW ->Window seats
+-- -> Dummy seats
+
+
+TestCase2:int[][] input1= {{6,2},{4,3},{2,3}}; 30
+Input: 
+    SEAT LAYOUTƒ
+============================
+W  M  M  M  M  A  A  M  M  A  A  W  
+W  M  M  M  M  A  A  M  M  A  A  W  
+*  *  *  *  *  *  A  M  M  A  A  W  
+--------------------
+RESERVED SEAT ARRANGEMENT
+============================
+12  17  18  19  20  01  02  21  22  03  04  13  
+14  23  24  25  26  05  06  27  28  07  08  15  
+--  --  --  --  --  --  09  29  30  10  11  16  
+MM ->Middle seats
+AA ->Aisle seats
+WW ->Window seats
+-- -> Dummy seats
+
+
+TestCase3:
+Input: {{6,2},{4,3},{2,3},{3,4}}; 10
+    SEAT LAYOUT
+============================
+W  M  M  M  M  A  A  M  M  A  A  A  A  M  W  
+W  M  M  M  M  A  A  M  M  A  A  A  A  M  W  
+*  *  *  *  *  *  A  M  M  A  A  A  A  M  W  
+*  *  *  *  *  *  *  *  *  *  *  *  A  M  W  
+--------------------
+RESERVED SEAT ARRANGEMENT
+============================
+WW  MM  MM  MM  MM  01  02  MM  MM  03  04  05  06  MM  WW  
+WW  MM  MM  MM  MM  07  08  MM  MM  09  10  AA  AA  MM  WW  
+--  --  --  --  --  --  AA  MM  MM  AA  AA  AA  AA  MM  WW  
+--  --  --  --  --  --  --  --  --  --  --  --  AA  MM  WW  
+MM ->Middle seats
+AA ->Aisle seats
+WW ->Window seats
+-- -> Dummy seats
